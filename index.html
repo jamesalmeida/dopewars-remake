@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dopewars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Dopewars</h1>
+        <div id="stats">
+            <p>Cash: $<span id="cash">2000</span></p>
+            <p>Debt: $<span id="debt">5500</span></p>
+            <p>Day: <span id="day">1</span>/<span id="max-days">30</span></p>
+            <p>Location: <span id="location">Bronx</span></p>
+        </div>
+        <div id="inventory">
+            <h2>Inventory</h2>
+            <ul id="inventory-list"></ul>
+        </div>
+        <div id="market">
+            <h2>Market</h2>
+            <ul id="market-list"></ul>
+        </div>
+        <div id="actions">
+            <div id="main-actions">
+                <button onclick="enterBuyMode()">Buy</button>
+                <button onclick="enterSellMode()">Sell</button>
+                <button onclick="moveLocation()">Move</button>
+                <button onclick="enterPayDebtMode()">Pay Debt</button>
+            </div>
+            <div id="transaction-actions" style="display: none;">
+                <button onclick="confirmTransaction()" id="confirm-transaction">Confirm</button>
+                <button onclick="cancelTransaction()">Cancel</button>
+            </div>
+        </div>
+        
+        <!-- Transaction Panel -->
+        <div id="transaction-panel" style="display: none;">
+            <h2 id="transaction-title">Buy Drugs</h2>
+            <div id="drug-options"></div>
+            <div id="quantity-controls" style="display: none;">
+                <p>Quantity: <span id="quantity-value">1</span> (Max: <span id="max-quantity">0</span>)</p>
+                <button onclick="decreaseQuantity()">-</button>
+                <button onclick="increaseQuantity()">+</button>
+                <button onclick="setMaxQuantity()">Max</button>
+            </div>
+        </div>
+        
+        <div id="messages">
+            <p>Welcome to Dopewars! Buy low, sell high, and avoid the cops.</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

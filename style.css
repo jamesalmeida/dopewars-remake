@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+#game {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff4444;
+}
+
+#stats, #inventory, #market, #actions, #messages, #transaction-panel {
+    margin-bottom: 20px;
+}
+
+#stats p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button.selected {
+    background-color: #ff4444;
+    color: #fff;
+}
+
+#messages {
+    background-color: #1a1a1a;
+    padding: 10px;
+    height: 100px;
+    overflow-y: scroll;
+    border: 1px solid #444;
+}
+
+#transaction-panel {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+#drug-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#quantity-controls p {
+    margin-right: 15px;
+}
+
+#quantity-controls button {
+    padding: 5px 15px;
+}
+
+#transaction-actions {
+    margin-top: 15px;
+}
+
+#confirm-transaction {
+    background-color: #4CAF50;
+}
+
+#confirm-transaction:hover {
+    background-color: #45a049;
+}
+
+/* Debt payment styles */
+.payment-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.payment-controls p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#payment-amount {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 150px;
+}
+
+.quick-payment-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quick-payment-buttons button {
+    background-color: #555;
+}
+
+.quick-payment-buttons button:hover {
+    background-color: #777;
+}
